@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortOptions_arr">
+        <item>@string/sort_option_default</item>
+        <item>@string/sort_option_best_match</item>
+        <item>@string/sort_option_newest</item>
+        <item>@string/sort_option_rating_average</item>
+        <item>@string/sort_option_distance</item>
+        <item>@string/sort_option_popularity</item>
+        <item>@string/sort_option_average_product_price</item>
+        <item>@string/sort_option_delivery_costs</item>
+        <item>@string/sort_option_minimum_cost</item>
+    </string-array>
+</resources>

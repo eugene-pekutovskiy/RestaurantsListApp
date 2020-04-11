@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_small"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:ellipsize="end"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:maxLines="2"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/textSize_medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/addToFavouritesButton"
+        app:layout_constraintStart_toEndOf="@+id/averageRating"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tandoori Express" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/topLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_regular"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="@dimen/topLabel_min_width"
+        android:padding="@dimen/margin_smallest"
+        android:text="@string/favourite_label"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize_small"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/addToFavouritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/margin_regular"
+        android:src="@drawable/favourite_item_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/averageRating"
+        style="@style/AppRegularTextViewWithImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLabel"
+        tools:text="4.5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/openingsState"
+        style="@style/AppRegularTextViewWithImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        app:drawableStartCompat="@drawable/ic_access_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantName"
+        tools:text="Closed"
+        tools:textColor="@color/colorPrimary" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/deliveryCost"
+        style="@style/AppRegularTextViewWithImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_smallest"
+        android:paddingBottom="@dimen/margin_small"
+        app:drawableStartCompat="@drawable/ic_car"
+        app:layout_constraintStart_toStartOf="@+id/openingsState"
+        app:layout_constraintTop_toBottomOf="@+id/openingsState"
+        tools:text="0.50$" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/restaurants_item_progress_size"
+        android:layout_height="@dimen/restaurants_item_progress_size"
+        android:layout_marginEnd="@dimen/margin_regular"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

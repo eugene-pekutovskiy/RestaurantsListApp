@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RestaurantsListApp</string>
+    <string name="restaurants_list">Restaurants list</string>
+    
+    <!-- sort options -->
+    <string name="sort_option_default">Default</string>
+    <string name="sort_option_best_match">Best match</string>
+    <string name="sort_option_newest">Newest</string>
+    <string name="sort_option_rating_average">Rating average</string>
+    <string name="sort_option_distance">Distance</string>
+    <string name="sort_option_popularity">Popularity</string>
+    <string name="sort_option_average_product_price">Average product price</string>
+    <string name="sort_option_delivery_costs">Delivery costs</string>
+    <string name="sort_option_minimum_cost">Minimum cost</string>
+
+    <!-- list item -->
+    <string name="delivery_cost_free">free</string>
+    <string name="openings_state_closed">Closed</string>
+    <string name="openings_state_open">Open</string>
+    <string name="openings_state_order_ahead">Order ahead</string>
+    <string name="new_label">new</string>
+    <string name="favourite_label">favourite</string>
+    <string name="empty"/>
+    <!-- toast text -->
+    <string name="restaurant_has_been_added_to_favourites">Restaurant has been added to favourites</string>
+    <string name="restaurant_has_been_removed_from_favourites">Restaurant has been removed from favourites</string>
+    <string name="unknown_error_txt">Unknown error occurred</string>
+    <!-- filtering -->
+    <string name="filter_by_restaurant_name">Filter by restaurant name</string>
+    <string name="no_matches_found">No matches found</string>
+
+</resources>

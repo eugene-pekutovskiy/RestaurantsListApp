@@ -1,0 +1,3 @@
+package com.eugene.pekutovskiy.restaurantslistapp.annotations
+
+annotation class OpenForTesting
